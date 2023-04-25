@@ -1,20 +1,21 @@
-# Frontend Mentor - Base Apparel coming soon page
+# Frontend Mentor - Base Apparel coming soon page solution
 
-## Welcome! 👋
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Thanks for checking out this front-end coding challenge.
+## Table of contents
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
@@ -22,4 +23,40 @@ Your users should be able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
+
+### Screenshot
+
+![](./screenshot.png)
+
+### Links
+
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/base-apperal-bmlzMGxmb-)
+- Live Site URL: [Live Site](https://fm-apparel.netlify.app/)
+
+### Built with
+
+- VS Code
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- JavaScript(soon)
+
+### Continued development
+
+JS, React, Node.js
+
+## Author
+
+- GitHub - [VladMishchuk](https://github.com/VladMishchuk)
+- Frontend Mentor - [@VladMishchuk](https://www.frontendmentor.io/profile/VladMishchuk)
+- Twitter - [@MishchykVlad](https://twitter.com/MishchykVlad)
