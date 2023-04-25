@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "League Spartan", sans-serif;
+  box-sizing: border-box;
+}
+html[data-theme="theme-one"] {
+  --clr-body-bg: hsl(222, 26%, 31%);
+
+  --clr-bar-text: hsl(0, 0%, 100%);
+  --clr-toggle-bg: hsl(223, 31%, 20%);
+  --clr-theme-bg: hsl(6, 63%, 50%);
+  --clr-theme-hv-bg: hsl(6, 100%, 69%);
+
+  --clr-screen-bg: hsl(224, 36%, 15%);
+  --screen-color: hsl(0, 0%, 100%);
+
+  --clr-keypad-bg: hsl(223, 31%, 20%);
+  --clr-btn-text: hsl(0, 0%, 100%);
+  --clr-btn-shadow: hsl(28, 16%, 65%);
+  --clr-btn-nums-bg: hsl(30, 25%, 89%);
+  --clr-btn-nums-hv-bg: hsl(0, 0%, 100%);
+  --clr-btn-nums-text: hsl(221, 14%, 31%);
+  --clr-btn-res-del-bg: hsl(225, 21%, 49%);
+  --clr-btn-res-del-hv-bg: hsl(224, 94%, 86%);
+  --clr-btn-res-del-shadow: hsl(224, 28%, 35%);
+  --clr-btn-eqw-text: hsl(0, 0%, 100%);
+  --clr-btn-eqw-bg: hsl(6, 63%, 50%);
+  --clr-btn-eqw-shadow: hsl(6, 70%, 34%);
+}
+html[data-theme="theme-two"] {
+  --clr-body-bg: hsl(0, 0%, 90%);
+
+  --clr-bar-text: hsl(60, 10%, 19%);
+  --clr-toggle-bg: hsl(0, 5%, 81%);
+  --clr-theme-bg: hsl(25, 98%, 40%);
+  --clr-theme-hv-bg: hsl(25, 95%, 64%);
+
+  --clr-screen-bg: hsl(0, 0%, 93%);
+  --screen-color: hsl(60, 10%, 19%);
+
+  --clr-keypad-bg: hsl(0, 5%, 81%);
+  --clr-btn-text: hsl(0, 0%, 100%);
+  --clr-btn-shadow: hsl(28, 16%, 65%);
+  --clr-btn-nums-bg: hsl(45, 7%, 89%);
+  --clr-btn-nums-hv-bg: hsl(0, 0%, 100%);
+  --clr-btn-nums-text: hsl(60, 10%, 19%);
+  --clr-btn-res-del-bg: hsl(185, 42%, 37%);
+  --clr-btn-res-del-hv-bg: hsl(185, 49%, 62%);
+  --clr-btn-res-del-shadow: hsl(185, 58%, 25%);
+  --clr-btn-eqw-text: hsl(0, 0%, 100%);
+  --clr-btn-eqw-bg: hsl(25, 98%, 40%);
+  --clr-btn-eqw-shadow: hsl(6, 70%, 34%);
+}
+html[data-theme="theme-three"] {
+  --clr-body-bg: hsl(268, 75%, 9%);
+
+  --clr-bar-text: hsl(52, 100%, 62%);
+  --clr-toggle-bg: hsl(268, 71%, 12%);
+  --clr-theme-bg: hsl(176, 100%, 44%);
+  --clr-theme-hv-bg: hsl(176, 100%, 85%);
+
+  --clr-screen-bg: hsl(268, 71%, 12%);
+  --screen-color: hsl(52, 100%, 62%);
+
+  --clr-keypad-bg: hsl(268, 71%, 12%);
+  --clr-btn-text: hsl(0, 0%, 100%);
+  --clr-btn-shadow: hsl(290, 70%, 36%);
+  --clr-btn-nums-bg: hsl(268, 47%, 21%);
+  --clr-btn-nums-hv-bg: hsl(268, 58%, 39%);
+  --clr-btn-nums-text: hsl(52, 100%, 62%);
+  --clr-btn-res-del-bg: hsl(281, 89%, 26%);
+  --clr-btn-res-del-hv-bg: hsl(281, 72%, 52%);
+  --clr-btn-res-del-shadow: hsl(285, 91%, 52%);
+  --clr-btn-eqw-text: hsl(198, 20%, 13%);
+  --clr-btn-eqw-bg: hsl(176, 100%, 44%);
+  --clr-btn-eqw-shadow: hsl(177, 92%, 70%);
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-body-bg);
+}
+.field {
+  max-width: 460px;
+  margin: 0 20px;
+}
+label {
+  display: none;
+}
+
+/*toggle*/
+.bar {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  color: var(--clr-bar-text);
+  padding: 0 5px;
+}
+.header {
+  font-size: 2rem;
+}
+.bar__toggle {
+  display: flex;
+  gap: 25px;
+  font-size: 10px;
+}
+.bar_sign {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  align-self: self-end;
+}
+.toggle__switcher {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+}
+.switcher__numbers {
+  display: flex;
+  justify-content: space-around;
+}
+.switcher__theme {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 15px;
+  background: var(--clr-toggle-bg);
+}
+input[type="radio"] {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+input[type="radio"]:checked {
+  background-color: var(--clr-theme-bg);
+}
+
+/*screen*/
+.screen-label {
+  display: block;
+}
+.screen {
+  width: 100%;
+  font-size: 3rem;
+  background-color: var(--clr-screen-bg);
+  border-radius: 7px;
+  margin-bottom: 20px;
+  padding: 30px;
+  color: var(--screen-color);
+  border: none;
+  text-align: right;
+}
+
+/*keypad*/
+.keypad {
+  padding: 30px;
+  border-radius: 7px;
+  background-color: var(--clr-keypad-bg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+}
+button {
+  padding: 15px 20px 10px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  color: var(--clr-btn-text);
+  box-shadow: 0px 3px 0px 0px var(--clr-btn-shadow);
+  cursor: pointer;
+}
+.dark-blue {
+  background-color: var(--clr-btn-nums-bg);
+  color: var(--clr-btn-nums-text);
+  font-size: 2rem;
+}
+.btn-res {
+  grid-area: 5 / 1 / 6 / 3;
+}
+.btn-res,
+.btn-del {
+  background-color: var(--clr-btn-res-del-bg);
+  box-shadow: 0px 3px 0px 0px var(--clr-btn-res-del-shadow);
+}
+.btn-eqv {
+  grid-area: 5 / 3 / 6 / 5;
+  color: var(--clr-btn-eqw-text);
+  background-color: var(--clr-btn-eqw-bg);
+  box-shadow: 0px 3px 0px 0px var(--clr-btn-eqw-shadow);
+}
+
+/*hovers*/
+.dark-blue:hover {
+  background-color: var(--clr-btn-nums-hv-bg);
+}
+.btn-del:hover,
+.btn-res:hover {
+  background-color: var(--clr-btn-res-del-hv-bg);
+}
+.btn-eqv:hover,
+input[type="radio"]:checked:hover {
+  background-color: var(--clr-theme-hv-bg);
+}
+
+/*mobile*/
+@media (max-width: 400px) {
+  .field {
+    width: 100%;
+    margin: 0 25px;
+  }
+  .screen {
+    overflow: scroll;
+    font-size: 2.7rem;
+    background-color: var(--clr-screen-bg);
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding: 25px 20px 20px 35px;
+    color: var(--screen-color);
+    text-align: right;
+  }
+  .keypad {
+    padding: 25px;
+    border-radius: 7px;
+    background-color: var(--clr-keypad-bg);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+  }
+  button {
+    padding: 17px 5px 10px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-btn-text);
+    box-shadow: 0px 3px 0px 0px var(--clr-btn-shadow);
+    cursor: pointer;
+  }
+}

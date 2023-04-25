@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="theme-one">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main class="field">
+      <section class="bar">
+        <h1 class="header">calc</h1>
+        <div class="bar__toggle">
+          <p class="bar_sign">theme</p>
+          <div class="toggle__switcher">
+            <div class="switcher__numbers">
+              <span>1</span><span>2</span><span>3</span>
+            </div>
+            <div class="switcher__theme">
+              <label for="theme-one">Theme one</label>
+              <input
+                class="theme"
+                id="theme-one"
+                type="radio"
+                name="radio"
+                checked
+              />
+              <label for="theme-two">Theme two</label>
+              <input class="theme" id="theme-two" type="radio" name="radio" />
+              <label for="theme-three">Theme three</label>
+              <input class="theme" id="theme-three" type="radio" name="radio" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <label class="screen-label" for="screen">
+        <input name="screen" id="screen" class="screen" type="text" />
+      </label>
+      <section class="keypad">
+        <button class="dark-blue num">7</button>
+        <button class="dark-blue num">8</button>
+        <button class="dark-blue num">9</button>
+        <button id="del" class="btn-del">DEL</button>
+        <button class="dark-blue num">4</button>
+        <button class="dark-blue num">5</button>
+        <button class="dark-blue num">6</button>
+        <button class="dark-blue oper">+</button>
+        <button class="dark-blue num">1</button>
+        <button class="dark-blue num">2</button>
+        <button class="dark-blue num">3</button>
+        <button class="dark-blue oper">-</button>
+        <button id="." class="dark-blue">.</button>
+        <button class="dark-blue num">0</button>
+        <button class="dark-blue oper">/</button>
+        <button class="dark-blue oper">x</button>
+        <button id="reset" class="btn-res">RESET</button>
+        <button id="=" class="btn-eqv">=</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

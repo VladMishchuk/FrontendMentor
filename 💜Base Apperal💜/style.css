@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  --gradient1: hsl(0, 0%, 100%);
+  --gradient2: hsl(0, 100%, 98%);
+  --gradient3: hsl(0, 80%, 86%);
+  --gradient4: hsl(0, 74%, 74%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+html,
+body,
+.left,
+.right {
+  height: 100vh;
+}
+main {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.bg-img {
+  height: 100%;
+  width: 65%;
+  position: absolute;
+  z-index: -1;
+}
+.left {
+  width: 60%;
+  padding: 60px 200px 60px 150px;
+}
+.logo {
+  margin-bottom: 150px;
+}
+.hero-mobile {
+  display: none;
+}
+h1 {
+  text-transform: uppercase;
+  line-height: 1.05;
+  letter-spacing: 15px;
+  font-size: 4rem;
+  color: var(--Dark-Grayish-Red);
+  margin-bottom: 25px;
+}
+span,
+p {
+  color: var(--Desaturated-Red);
+}
+span {
+  font-weight: 300;
+  font-size: 4rem;
+}
+p {
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+form {
+  position: relative;
+}
+input {
+  color: var(--Dark-Grayish-Red);
+  width: 100%;
+  border: 1px solid var(--Desaturated-Red);
+  border-radius: 40px;
+  padding: 20px 30px;
+}
+input::placeholder {
+  color: var(--Desaturated-Red);
+  opacity: 0.5;
+}
+button {
+  background: linear-gradient(135deg, var(--gradient3), var(--gradient4));
+  border: none;
+  border-radius: 40px;
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 5px 30px 0px rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+}
+.hero {
+  min-height: 100%;
+}
+
+input:focus {
+  border: 2px solid var(--Soft-Red);
+  outline: none;
+}
+button:hover {
+  background: var(--gradient3);
+  box-shadow: 0px 5px 30px 0px rgba(255, 0, 0, 0.4);
+}
+
+@media (max-width: 854px) {
+  .left {
+  padding: 60px 200px 60px 100px;
+}
+}
+@media (max-width: 768px) {
+  main {
+    overflow-y: scroll;
+  }
+  .bg-img {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+    padding: 0;
+  }
+  .logo {
+    display: block;
+    margin: 0;
+    width: 180px;
+    padding: 30px;
+  }
+  .hero-mobile {
+    display: block;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+  h1,
+  span {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: center;
+    padding: 0 25px;
+    font-size: 0.8rem;
+  }
+  .right {
+    display: none;
+  }
+  form {
+    margin: 0 25px;
+  }
+  input{
+    padding: 15px;
+  }
+}

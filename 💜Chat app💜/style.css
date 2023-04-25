@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-h1: hsl(271, 36%, 24%);
+  --clr-p: hsl(270, 7%, 64%);
+  --clr-sub-heading: hsl(276, 100%, 81%);
+  --clr-gradient1: hsl(293, 100%, 63%);
+  --clr-gradient2: hsl(264, 100%, 61%);
+  --clr-bg-app: hsl(270, 20%, 96%);
+  --clr-bg-submit: hsl(271, 36%, 24%);
+  --clr-outline-radio: hsl(289, 100%, 72%);
+  --clr-left: hsl(276, 55%, 52%);
+  --clr-right: hsl(271, 15%, 43%);
+  --clr-placeholder: hsl(206, 6%, 79%);
+}
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+}
+.app {
+  overflow: hidden;
+  width: 250px;
+  background: var(--clr-bg-app);
+  border-radius: 30px;
+  border: 10px solid var(--clr-white);
+  box-shadow: 10px 10px 50px 0px hsla(0, 0%, 0%, 0.2);
+}
+.app__head {
+  background: linear-gradient(
+    40deg,
+    var(--clr-gradient2),
+    var(--clr-gradient1)
+  );
+  border-radius: 5px;
+}
+.head-camera {
+  width: 55%;
+  height: 15px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+  background-color: var(--clr-white);
+}
+.head-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.panel-left {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.ico {
+  width: 15px;
+}
+.avatar {
+  border-radius: 50%;
+  border: 1px solid var(--clr-white);
+  width: 25px;
+}
+h2 {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--clr-white);
+}
+.sub-heading {
+  font-size: 9px;
+  color: var(--clr-sub-heading);
+}
+.app-chat {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.message__left {
+  font-size: 9px;
+  color: var(--clr-left);
+  max-width: 65%;
+  background-color: hsl(269, 100%, 95%);
+  align-self: flex-start;
+  padding: 5px 10px;
+  border-radius: 10px 10px 10px 5px;
+}
+.message__right {
+  font-size: 9px;
+  max-width: 65%;
+  color: var(--clr-right);
+  background: var(--clr-white);
+  align-self: flex-end;
+  padding: 5px 10px;
+  border-radius: 10px 10px 5px 10px;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.galerry {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 5px;
+}
+.gallary-image {
+  border-radius: 10px;
+  width: 40px;
+}
+.tariff {
+  min-width: 75%;
+  background: linear-gradient(
+    to right,
+    var(--clr-gradient1) 0%,
+    var(--clr-gradient2) 100%
+  );
+  color: var(--clr-white);
+  font-size: 9px;
+  padding: 8px 15px 8px 8px;
+}
+label {
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 9px;
+}
+.price {
+  font-size: 12px;
+  font-weight: 500;
+}
+.app-write {
+  background-color: var(--clr-white);
+  padding: 5px 5px 5px 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--clr-placeholder);
+}
+.radio {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid var(--clr-white);
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+.radio:checked {
+  background-color: var(--clr-white);
+}
+button {
+  border: none;
+  width: 25px;
+  height: 25px;
+  background: var(--clr-bg-submit);
+  border-radius: 50%;
+}
+.send {
+  width: 10px;
+}
+.content__left {
+  margin-top: 60px;
+  text-align: center;
+}
+h1 {
+  color: var(--clr-h1);
+  font-weight: 500;
+  font-size: 40px;
+}
+.text__p {
+  padding: 25px 40px 50px;
+  line-height: 1.8;
+  color: var(--clr-p);
+}
+.main {
+  height: 100%;
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
+  z-index: 0;
+  overflow-x: hidden;
+}
+.main__back {
+  position: absolute;
+  height: 55%;
+  width: 100%;
+}
+.main__back-left {
+  top: 0;
+  right: 50%;
+  background-color: var(--clr-left);
+  z-index: -1;
+  border-radius: 0 0 50vmax 50vmax;
+}
+.main__back-right {
+  bottom: 0;
+  left: 50%;
+  background-color: hsl(260, 100%, 99%);
+  z-index: -1;
+  border-radius: 50vmax 50vmax 0 0;
+}
+
+@media (min-width: 870px) {
+  .main {
+    height: 100vh;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 0;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__back {
+    position: absolute;
+    height: 90%;
+    width: 40%;
+  }
+  .main__back-left {
+    top: 0;
+    left: -10%;
+    background-color: hsl(276, 55%, 52%);
+    z-index: -1;
+    border-radius: 0 0 50vmax 50vmax;
+  }
+  .main__back-right {
+    bottom: 0;
+    left: 75%;
+    background-color: (270, 20%, 96%, 0.5);
+    z-index: -1;
+    border-radius: 50vmax 50vmax 0 0;
+  }
+  .content {
+    width: 70%;
+    flex-direction: row;
+    margin: 0;
+  }
+  .content__right {
+    width: 50%;
+  }
+  .app {
+    margin: 0 auto;
+  }
+  .content__left {
+    width: 50%;
+  }
+  h1 {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  .text__p {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+#heder {
+  animation: drop-in 0.5s ease 200ms backwards;
+}
+#text {
+  animation: drop-in 0.5s ease 400ms backwards;
+}
+#app {
+  animation: drop-in 0.5s ease 200ms backwards;
+}
+#ico {
+  animation: zoom 0.5s ease 400ms;
+}
+#ico2 {
+  animation: zoom 0.5s ease 600ms;
+}
+#avatar {
+  animation: zoom 0.5s ease 600ms;
+}
+#status {
+  animation: move 0.5s ease 600ms;
+}
+#message1 {
+  animation: zoom 0.5s ease 800ms;
+}
+#message2 {
+  animation: zoom 0.5s ease 1000ms;
+}
+#img1 {
+  animation: zoom 0.5s ease 1200ms;
+}
+#img2 {
+  animation: zoom 0.5s ease 1400ms;
+}
+#img3 {
+  animation: zoom 0.5s ease 1600ms;
+}
+#message3 {
+  animation: zoom 0.5s ease 1800ms;
+}
+#message4 {
+  animation: zoom 0.5s ease 2000ms;
+}
+#message5 {
+  animation: zoom 0.5s ease 2200ms;
+}
+#message6 {
+  animation: zoom 0.5s ease 2400ms;
+}
+#message7 {
+  animation: zoom 0.5s ease 2600ms;
+}
+#write {
+  animation: zoom 0.5s ease 2800ms;
+}
+#send {
+  animation: zoom 0.5s ease 3000ms;
+}
+#ico3 {
+  animation: zoom 0.5s ease 3000ms;
+}
+
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: scale(0%);
+  }
+  to {
+    opacity: 1;
+    transform: scale(100%);
+  }
+}
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes move {
+  0% {
+    translate: none;
+  }
+  50% {
+    translate: 5px 0px;
+  }
+  100% {
+    translate: none;
+  }
+}

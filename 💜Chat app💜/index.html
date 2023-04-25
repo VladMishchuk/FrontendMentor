@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Chat app</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__back-left main__back"></div>
+      <div class="main__back-right main__back"></div>
+      <section class="content">
+        <div class="content__right">
+          <div id="app" class="app">
+            <div class="app__head">
+              <div class="head-camera"></div>
+              <div class="head-panel">
+                <div class="panel-left">
+                  <div class="panel-back">
+                    <img
+                      id="ico"
+                      class="ico"
+                      src="images/left.png"
+                      alt="back"
+                    />
+                  </div>
+                  <div class="panel-avatar">
+                    <img
+                      id="avatar"
+                      class="avatar"
+                      src="images/avatar.jpg"
+                      alt="avatar"
+                    />
+                  </div>
+                  <div id="status" class="panel-status">
+                    <h2 class="a">Samuel Green</h2>
+                    <p class="sub-heading">Available to Walk</p>
+                  </div>
+                </div>
+                <div class="panel-menu">
+                  <img id="ico2" class="ico" src="images/dots.png" alt="menu" />
+                </div>
+              </div>
+            </div>
+            <div class="app-chat">
+              <p id="message1" class="message__left">
+                That sounds great. I’d be happy with that.
+              </p>
+              <p id="message2" class="message__left">
+                Could you send over some pictures of your dog, please?
+              </p>
+              <div class="galerry">
+                <img
+                  id="img1"
+                  class="gallary-image"
+                  src="images/dog-image-1.jpg"
+                  alt="dog1"
+                />
+                <img
+                  id="img2"
+                  class="gallary-image"
+                  src="images/dog-image-2.jpg"
+                  alt="dog2"
+                />
+                <img
+                  id="img3"
+                  class="gallary-image"
+                  src="images/dog-image-3.jpg"
+                  alt="dog3"
+                />
+              </div>
+              <p id="message3" class="message__right">
+                Here are a few pictures. She’s a happy girl!
+              </p>
+              <p id="message4" class="message__right">Can you make it?</p>
+              <p id="message5" class="message__left">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </p>
+              <p id="message6" class="message__left tariff">
+                <label for="price-smaller"
+                  ><span
+                    ><input
+                      type="radio"
+                      name="tariff"
+                      id="price-smaller"
+                      class="radio"
+                    />
+                    30 minute walk</span
+                  >
+                  <span class="price">$29</span></label
+                >
+              </p>
+              <p id="message7" class="message__left tariff">
+                <label for="price-bigger"
+                  ><span
+                    ><input
+                      type="radio"
+                      name="tariff"
+                      id="price-bigger"
+                      class="radio"
+                    />1 hour walk</span
+                  >
+                  <span class="price">$49</span></label
+                >
+              </p>
+              <div id="write" class="app-write">
+                <span>Type a message…</span>
+                <button id="send" type="submit">
+                  <img
+                    id="ico3"
+                    class="send"
+                    src="images/next.png"
+                    alt="send"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__left">
+          <h1 id="heder">Simple booking</h1>
+          <p id="text" class="text__p">
+            Stay in touch with our dog walkers through the chat interface. This
+            makes it easy to discuss arrangements and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
