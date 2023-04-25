@@ -22,18 +22,7 @@ Users should be able to:
 - Receive an error message when the `form` is submitted if:
   - The `input` field is empty
   - The email address is not formatted correctly
-
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-
+  
 ### Screenshot
 
 ![](./screenshot.png)
