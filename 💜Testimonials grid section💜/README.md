@@ -20,7 +20,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/testimonials-grid-section-i6nTpTcH2n)
-- Live Site URL: [Live Site](https://unique-paprenjak.netlify.app/)
+- Live Site URL: [Live Site](https://fm-grid-section.netlify.app/)
 
 ### Built with
 
