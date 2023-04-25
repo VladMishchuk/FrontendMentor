@@ -20,7 +20,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/results-summary-component-N2i6phlc0d)
-- Live Site URL: [Live Site](https://fabulous-dango.netlify.app/)
+- Live Site URL: [Live Site](https://fm-results.netlify.app/)
 
 ### Built with
 
