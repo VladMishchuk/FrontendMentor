@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/calculator-app-o_Skovs5Nw)
-- Live Site URL: [Live Site](https://musical-creponne.netlify.app/)
+- Live Site URL: [Live Site](https://fm-calc-app.netlify.app/)
 
 ### Built with
 
