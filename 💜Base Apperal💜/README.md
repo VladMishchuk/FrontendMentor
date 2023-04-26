@@ -43,11 +43,11 @@ Users should be able to:
 ### What I learned
 
 - RegEx
-- .test()
+ - .test()
 
 - DOM
-- .preventDefault()
-- .style.
+ - .preventDefault()
+ - .style.
 
 ### Continued development
 
