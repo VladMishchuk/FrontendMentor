@@ -40,6 +40,14 @@ Users should be able to:
 - Flexbox
 - JavaScript(soon)
 
+### What I learned
+
+- RegEx
+-- .test()
+- DOM
+-- .preventDefault()
+-- .style.
+
 ### Continued development
 
 JS, React, Node.js
