@@ -1,0 +1,11 @@
+*.sketch
+design/
+/_MACOSX
+/space-tourism-website-figma
+/space-tourism-website-main
+/space-tourism-website-sketch
+/README-template.md
+/style-guide.md
+*.xd
+*.fig
+.DS_Store
