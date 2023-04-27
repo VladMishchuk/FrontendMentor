@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Bright-blue-opacity: hsla(245, 75%, 52%, 0.4);
+  --Bright-blue-hover: hsl(256, 63%, 56%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  font-size: 16px;
+}
+html,
+body {
+  height: 100%;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: cover;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+section {
+  padding: 45px;
+  display: grid;
+  gap: 20px;
+}
+#hero{
+  width: 100%;
+}
+h1 {
+  line-height: 1;
+  font-weight: 900;
+  font-size: 1.7rem;
+  color: var(--Dark-blue);
+}
+p {
+  line-height: 1.7;
+  color: var(--Desaturated-blue);
+}
+article {
+  background: var(--Very-pale-blue);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+h2 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+#change {
+  font-size: 0.9rem;
+  margin-left: auto;
+  background: transparent;
+  color: var(--Bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+}
+#pay {
+  background: var(--Bright-blue);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 40px 0px var(--Bright-blue-opacity);
+}
+#cancel {
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: var(--Desaturated-blue);
+  background: transparent;
+}
+
+#change:hover{
+  text-decoration: none;
+  color: var(--Bright-blue-hover);
+}
+#pay:hover{
+  background: var(--Bright-blue-hover);
+}
+#cancel:hover{
+  color: var(--Dark-blue);
+}
+
+@media (max-width: 455px) {
+  main {
+    margin: 0 20px;
+  }
+  section {
+    gap: 20px;
+    padding: 30px;
+  }
+}
+@media (max-width: 369px) {
+  main {
+    margin: 0 20px;
+  }
+  section {
+    gap: 20px;
+    padding: 30px  10px;
+  }
+  article{
+    padding: 10px;
+  }
+}
