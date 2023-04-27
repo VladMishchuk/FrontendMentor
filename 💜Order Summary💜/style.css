@@ -20,8 +20,9 @@
 html,
 body {
   height: 100%;
-  background-image: url(images/pattern-background-desktop.svg);
-  background-size: cover;
+  background-image: url(images/pattern-background-desktop.svg); 
+  background-repeat: no-repeat;
+   background-size: 100%;
 }
 body {
   display: flex;
@@ -33,6 +34,8 @@ main {
   background: white;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0px 10px 40px 0px #cccccccc;
+
 }
 section {
   padding: 45px;
@@ -103,6 +106,11 @@ button {
 }
 
 @media (max-width: 455px) {
+  body{
+    background: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
   main {
     margin: 0 20px;
   }
@@ -112,9 +120,6 @@ button {
   }
 }
 @media (max-width: 369px) {
-  main {
-    margin: 0 20px;
-  }
   section {
     gap: 20px;
     padding: 30px  10px;
