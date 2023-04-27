@@ -44,6 +44,7 @@ Users should be able to:
 
 - RegEx
  - .test()
+
 - DOM
  - .preventDefault()
  - .style.
