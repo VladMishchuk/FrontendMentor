@@ -20,9 +20,10 @@
 html,
 body {
   height: 100%;
-  background-image: url(images/pattern-background-desktop.svg); 
+  background-color: var(--Pale-blue);
+  background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
-   background-size: 100%;
+  background-size: 100%;
 }
 body {
   display: flex;
@@ -35,14 +36,13 @@ main {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 10px 40px 0px #cccccccc;
-
 }
 section {
   padding: 45px;
   display: grid;
   gap: 20px;
 }
-#hero{
+#hero {
   width: 100%;
 }
 h1 {
@@ -94,19 +94,19 @@ button {
   background: transparent;
 }
 
-#change:hover{
+#change:hover {
   text-decoration: none;
   color: var(--Bright-blue-hover);
 }
-#pay:hover{
+#pay:hover {
   background: var(--Bright-blue-hover);
 }
-#cancel:hover{
+#cancel:hover {
   color: var(--Dark-blue);
 }
 
 @media (max-width: 455px) {
-  body{
+  body {
     background: url(images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -122,9 +122,9 @@ button {
 @media (max-width: 369px) {
   section {
     gap: 20px;
-    padding: 30px  10px;
+    padding: 30px 10px;
   }
-  article{
+  article {
     padding: 10px;
   }
 }
