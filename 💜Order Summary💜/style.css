@@ -15,32 +15,32 @@
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
   text-align: center;
-  font-size: 16px;
 }
 html,
 body {
+  font-size: 16px;
   height: 100%;
+}
+body {
   background-color: var(--Pale-blue);
   background-image: url(images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-}
-body {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 main {
-  max-width: 450px;
+  max-width: 28.125rem;
   background: white;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 10px 40px 0px #cccccccc;
 }
 section {
-  padding: 45px;
+  padding: 2.75rem;
   display: grid;
-  gap: 20px;
+  gap: 1.5rem;
 }
 #hero {
   width: 100%;
@@ -58,13 +58,14 @@ p {
 article {
   background: var(--Very-pale-blue);
   border-radius: 10px;
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
   justify-content: space-between;
 }
 h2 {
+  font-size: 1rem;
   color: var(--Dark-blue);
   font-weight: 900;
 }
@@ -83,7 +84,7 @@ button {
 #pay {
   background: var(--Bright-blue);
   color: white;
-  padding: 15px;
+  padding: 0.9375rem;
   border-radius: 10px;
   box-shadow: 0px 10px 40px 0px var(--Bright-blue-opacity);
 }
@@ -112,19 +113,19 @@ button {
     background-size: 100%;
   }
   main {
-    margin: 0 20px;
+    margin: 0 1.25rem;
   }
   section {
-    gap: 20px;
-    padding: 30px;
+    gap: 1.25rem;
+    padding: 1.875rem;
   }
 }
 @media (max-width: 369px) {
   section {
-    gap: 20px;
-    padding: 30px 10px;
+    gap: 1.25rem;
+    padding: 1.875rem 0.625rem;
   }
   article {
-    padding: 10px;
+    padding: 0.625rem;
   }
 }
