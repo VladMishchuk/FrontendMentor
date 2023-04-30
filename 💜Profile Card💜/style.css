@@ -1,0 +1,117 @@
+/*
+### Primary
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+### Neutral
+Dark gray: hsl(0, 0%, 59%)
+## Typography
+### Body Copy
+- Font size (name and stats): 18px
+### Font
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: hsl(229, 23%, 23%);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(185, 75%, 39%);
+  position: relative;
+  overflow: hidden;
+}
+.bg-pattern-top {
+  top: -70%;
+  left: -40%;
+  position: absolute;
+  z-index: -1;
+}
+.bg-pattern-bottom {
+  bottom: -90%;
+  right: -40%;
+  position: absolute;
+  z-index: -1;
+}
+main {
+  display: grid;
+  background-color: white;
+  z-index: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+.card-pattern {
+  position: relative;
+  max-width: 100%;
+}
+.avatar {
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
+  border: 5px solid white;
+}
+h1 {
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p {
+  font-size: 0.8rem;
+}
+.age {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+}
+.city {
+  text-align: center;
+  color: hsl(227, 10%, 46%);
+  margin-bottom: 20px;
+}
+
+.stats {
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.stats__count {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.stats__category {
+  letter-spacing: 2px;
+  line-height: 1.5;
+  font-size: 0.6rem;
+  color: hsl(227, 10%, 46%);
+}
+hr {
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+@media (max-width: 820px) {
+  .bg-pattern-top {
+    top: -90%;
+    left: -200%;
+    position: absolute;
+    z-index: -1;
+  }
+  .bg-pattern-bottom {
+    bottom: -90%;
+    right: -200%;
+    position: absolute;
+    z-index: -1;
+  }
+}
