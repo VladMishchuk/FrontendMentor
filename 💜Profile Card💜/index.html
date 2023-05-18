@@ -2,53 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
-      type="image/png"
+      type="img/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Profile card component</title>
+    <title>Frontend Mentor | Profile card Component</title>
   </head>
   <body>
-    <img
-      class="bg-pattern-top"
-      src="images/bg-pattern-top.svg"
-      alt="background-pattern"
-    />
-    <img
-      class="bg-pattern-bottom"
-      src="images/bg-pattern-bottom.svg"
-      alt="background-pattern"
-    />
-    <main>
-      <div class="images">
-        <img
-          class="card-pattern"
-          src="images/bg-pattern-card.svg"
-          alt="card-pattern"
-        />
-        <img class="avatar" src="images/image-victor.jpg" alt="Avatar" />
-      </div>
-      <h1>Victor Crest <span class="age">26</span></h1>
-      <p class="city">London</p>
-      <hr />
-      <div class="stats">
-        <article>
-          <p class="stats__count">80K</p>
-          <p class="stats__category">Followers</p>
-        </article>
-        <article>
-          <p class="stats__count">803K</p>
-          <p class="stats__category">Likes</p>
-        </article>
-        <article>
-          <p class="stats__count">1.4K</p>
-          <p class="stats__category">Photos</p>
-        </article>
-      </div>
+    <main class="main">
+      <picture>
+        <img src="images/bg-pattern-card.svg" alt="" />
+      </picture>
+      <picture class="main__pic">
+        <img src="images/image-victor.jpg" alt="" />
+      </picture>
+      <h1>Victor Crest<span>26</span></h1>
+      <p class="main__p">London</p>
+      <ul>
+        <li>
+          <p class="main__ul-p">80<span>k</span></p>
+          <p class="main__ul-p2">Followers</p>
+        </li>
+        <li>
+          <p class="main__ul-p">803<span>k</span></p>
+          <p class="main__ul-p2">Likes</p>
+        </li>
+        <li>
+          <p class="main__ul-p">1.4<span>k</span></p>
+          <p class="main__ul-p2">Photos</p>
+        </li>
+      </ul>
     </main>
   </body>
 </html>

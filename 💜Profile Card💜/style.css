@@ -1,117 +1,112 @@
-/*
-### Primary
-Dark cyan: hsl(185, 75%, 39%)
-Very dark desaturated blue: hsl(229, 23%, 23%)
-Dark grayish blue: hsl(227, 10%, 46%)
-### Neutral
-Dark gray: hsl(0, 0%, 59%)
-## Typography
-### Body Copy
-- Font size (name and stats): 18px
-### Font
-- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
-- Weights: 400, 700
-*/
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-* {
-  padding: 0;
-  margin: 0;
-  font-size: 18px;
-  font-family: "Kumbh Sans", sans-serif;
-  color: hsl(229, 23%, 23%);
+:root {
+  /* Colors */
+  /* primary */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-cyan: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(277, 10%, 46%);
+  /* neutral */
+  --dark-gray: hsl(0, 0%, 59%);
+  --white: hsl(0, 0%, 100%);
+  /* Typography */
+  --typography: "Kumbh Sans", sans-serif;
 }
-html,
-body {
-  height: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+picture,
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
+  background-color: var(--dark-cyan);
+  font-family: var(--typography);
+  line-height: 0.8;
+  hyphens: none;
+  background: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
   background-color: hsl(185, 75%, 39%);
-  position: relative;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  background-repeat: no-repeat, no-repeat;
+  font-size: 18px;
+}
+.main {
   overflow: hidden;
-}
-.bg-pattern-top {
-  top: -70%;
-  left: -40%;
-  position: absolute;
-  z-index: -1;
-}
-.bg-pattern-bottom {
-  bottom: -90%;
-  right: -40%;
-  position: absolute;
-  z-index: -1;
-}
-main {
-  display: grid;
-  background-color: white;
-  z-index: 0;
-  border-radius: 15px;
-  overflow: hidden;
-  margin: 10px;
-}
-.card-pattern {
-  position: relative;
-  max-width: 100%;
-}
-.avatar {
-  position: absolute;
-  top: 36%;
-  left: 50%;
-  transform: translate(-50%);
-  border-radius: 50%;
-  border: 5px solid white;
-}
-h1 {
-  margin-top: 70px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-p {
-  font-size: 0.8rem;
-}
-.age {
-  font-weight: 400;
-  color: hsl(227, 10%, 46%);
-}
-.city {
-  text-align: center;
-  color: hsl(227, 10%, 46%);
-  margin-bottom: 20px;
-}
-
-.stats {
-  margin: 20px;
-  text-align: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+  box-shadow: 0px 10px 25px 10px hsla(185, 75%, 21%, 0.207);
 }
-.stats__count {
-  font-size: 1rem;
+.main__pic {
+  width: 7rem;
+  transform: translate(0, -3.4rem);
+}
+.main__pic img {
+  border: 0.35rem solid white;
+  border-radius: 50%;
+}
+.main h1 {
+  font-size: 1.125rem;
+  margin-top: -2.25rem;
   font-weight: 700;
+  white-space: nowrap;
+  color: var(--very-dark-cyan);
 }
-.stats__category {
-  letter-spacing: 2px;
-  line-height: 1.5;
-  font-size: 0.6rem;
-  color: hsl(227, 10%, 46%);
+.main h1 span {
+  margin-left: 0.6rem;
+  color: var(--dark-grayish-blue);
 }
-hr {
-  border-top: 1px solid hsl(0, 0%, 59%);
+.main__p {
+  font-size: 0.75rem;
+  margin: 1rem 0 1.75rem 0;
+  color: var(--dark-grayish-blue);
 }
-@media (max-width: 820px) {
-  .bg-pattern-top {
-    top: -90%;
-    left: -200%;
-    position: absolute;
-    z-index: -1;
-  }
-  .bg-pattern-bottom {
-    bottom: -90%;
-    right: -200%;
-    position: absolute;
-    z-index: -1;
-  }
+.main ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.5rem;
+  border-top: 1px solid hsl(0, 1%, 85%);
+}
+.main ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6rem;
+  margin: 1.75rem 0;
+}
+.main__ul-p {
+  font-weight: 700;
+  font-size: 1.121rem;
+  color: var(--very-dark-cyan);
+}
+.main__ul-p span {
+  font-weight: 700;
+  font-size: 1.121rem;
+  text-transform: uppercase;
+}
+.main__ul-p2 {
+  font-size: 0.55rem;
+  text-align: center;
+  letter-spacing: 0.15rem;
+  margin-top: 0.74rem;
+  color: var(--dark-grayish-blue);
 }
