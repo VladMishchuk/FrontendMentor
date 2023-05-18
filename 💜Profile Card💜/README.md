@@ -24,7 +24,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/profile-card-zpWr-XSaPb/)
 - Live Site URL: [Live Site](https://fm-prof-card.netlify.app/)
 
 ### Built with
