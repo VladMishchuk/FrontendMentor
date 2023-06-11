@@ -14,19 +14,16 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Our custom CSS -->
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <title>Frontend Mentor | Space tourism website</title>
-    <script src="navigation.js" defer></script>
-    <script src="technology.js" defer></script>
+    <script src="js/navigation.js" defer></script>
+    <script src="js/technology.js" defer></script>
   </head>
   <body class="technology">
     <header class="primary-header flex">
@@ -82,32 +79,22 @@
         <span aria-hidden="true">03</span> Space launch 1
       </h1>
       <picture>
-        <img src="./assets/technology/image-launch-vehicle-portrait.jpg" alt="Launch vehicle" />
+        <img
+          src="./assets/technology/image-launch-vehicle-portrait.jpg"
+          alt="Launch vehicle"
+        />
       </picture>
-
-      <div
-        class="numbered-list flex"
-        role="tablist"
-      >
+      <div class="numbered-list flex" role="tablist">
         <button aria-selected="true" role="tab" tabindex="0">
           <span class="ff-serif fs-600">1</span>
         </button>
-        <button
-          aria-selected="false"
-          role="tab"
-          tabindex="-1"
-        >
+        <button aria-selected="false" role="tab" tabindex="-1">
           <span class="ff-serif fs-600">2</span>
         </button>
-        <button
-          aria-selected="false"
-          role="tab"
-          tabindex="0"
-        >
+        <button aria-selected="false" role="tab" tabindex="0">
           <span class="ff-serif fs-600">3</span>
         </button>
       </div>
-
       <article class="technology-info" tabindex="0" role="tabpanel">
         <h3
           class="uppercase text-accent ff-sans-normal fs-300"
@@ -115,9 +102,16 @@
         >
           The terminology...
         </h3>
-        <h1 class="uppercase ff-serif fs-700" style="margin-bottom: 1rem">Launch vehicle</h1>
-
-        <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!</p>
+        <h1 class="uppercase ff-serif fs-700" style="margin-bottom: 1rem">
+          Launch vehicle
+        </h1>
+        <p>
+          A launch vehicle or carrier rocket is a rocket-propelled vehicle used
+          to carry a payload from Earth's surface to space, usually to Earth
+          orbit or beyond. Our WEB-X carrier rocket is the most powerful in
+          operation. Standing 150 metres tall, it's quite an awe-inspiring sight
+          on the launch pad!
+        </p>
       </article>
     </main>
   </body>

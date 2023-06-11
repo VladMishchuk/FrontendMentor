@@ -1,6 +1,27 @@
-fetch("data.json")
+///////////////////////////////////////////////////////////////////////////////////
+//////////check viewport changes for place right image/////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+let img = document.querySelector("picture").querySelector("img");
+let mediaQuery = window.matchMedia("(min-width: 45em)");
+
+function handleViewportChange(event) {
+  if (event.matches) {
+    img.src = img.src.replace("landscape", "portrait");
+  } else {
+    img.src = img.src.replace("portrait", "landscape");
+  }
+}
+mediaQuery.addListener(handleViewportChange);
+handleViewportChange(mediaQuery);
+///////////////////////////////////////////////////////////////////////////////////
+//////////get data from JSON file//////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+fetch("json/data.json")
   .then((response) => response.json())
   .then((data) => {
+    ////////////////////////////////////////////////////////////////////////////////
+    ///////////////tab navigation///////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////////
     const tabList = document.querySelector('[role="tablist"]');
     const tabs = tabList.querySelectorAll('[role="tab"]');
 
@@ -38,16 +59,19 @@ fetch("data.json")
     }
 
     function changeTabPanel(e) {
-      const targetTab = e.target;
-
+      let targetTab = e.target;
+      if (e.target.tagName == "SPAN") {
+        targetTab = targetTab.parentNode;
+      }
       const tabContainer = targetTab.parentNode;
-
       tabContainer
         .querySelector('[aria-selected="true"]')
         .setAttribute("aria-selected", false);
 
       targetTab.setAttribute("aria-selected", true);
-
+      ////////////////////////////////////////////////////////////////////////////////
+      ///////////paste the right content on page from JSON////////////////////////////
+      ////////////////////////////////////////////////////////////////////////////////
       selectedTab = tabContainer
         .querySelector('[aria-selected="true"]')
         .querySelector("span").textContent;
@@ -56,20 +80,6 @@ fetch("data.json")
         data.technology[parseInt(selectedTab) - 1].name;
       document.querySelector("p").textContent =
         data.technology[parseInt(selectedTab) - 1].description;
-
-      let img = document.querySelector("picture").querySelector("img");
-      let mediaQuery = window.matchMedia("(min-width: 45em)");
-
-      function handleViewportChange(event) {
-        if (event.matches) {
-          img.src = img.src.replace("landscape", "portrait");
-          console.log("1");
-        } else {
-          img.src = img.src.replace("portrait", "landscape");
-          console.log("2");
-        }
-      }
-      mediaQuery.addListener(handleViewportChange);
 
       document
         .querySelectorAll("img")[1]
