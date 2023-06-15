@@ -1,0 +1,41 @@
+@media (min-width: 768px) {
+  body {
+    padding: 4.5rem 1.5rem;
+    gap: 3.2rem;
+    header {
+      h1 {
+        margin: 0;
+        font-size: 2.2rem;
+      }
+      p {
+        margin: 1rem;
+        max-width: 32rem;
+      }
+    }
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        ". . b b . ."
+        "a a b b d d"
+        "a a c c d d"
+        ". . c c . .";
+      article {
+        max-width: 20rem;
+        height: 13rem;
+      }
+      #supervisor {
+        grid-area: a;
+      }
+      #team-builder {
+        grid-area: b;
+      }
+      #karma {
+        grid-area: c;
+      }
+      #calculator {
+        grid-area: d;
+      }
+    }
+  }
+}

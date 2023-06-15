@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+* body {
+  display: grid;
+  gap: 4.8rem;
+  place-items: center;
+  text-align: center;
+  font-size: 15px;
+  padding: 4rem 1.5rem;
+  color: hsl(234, 12%, 34%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+header {
+  display: grid;
+  margin: 0 auto;
+  place-items: center;
+}
+header h1 {
+  font-size: 1.5rem;
+}
+header h1 span {
+  display: block;
+}
+header p {
+  margin: 0.2rem;
+  color: hsl(229, 6%, 66%);
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+}
+main article {
+  min-height: 10.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+  padding: 1.5rem 1.8rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  border-top: 0.3rem solid;
+}
+main article h2 {
+  margin: 0;
+}
+main article p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: hsl(229, 6%, 66%);
+}
+main article img {
+  margin-top: auto;
+  align-self: flex-end;
+}
+main #supervisor {
+  border-top-color: hsl(180, 62%, 55%);
+}
+main #team-builder {
+  border-top-color: hsl(0, 78%, 62%);
+}
+main #karma {
+  border-top-color: hsl(34, 97%, 64%);
+}
+main #calculator {
+  border-top-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 4.5rem 1.5rem;
+    gap: 3.2rem;
+  }
+  body header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+  }
+  body header p {
+    margin: 1rem;
+    max-width: 32rem;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . b b . ." "a a b b d d" "a a c c d d" ". . c c . .";
+  }
+  body main article {
+    max-width: 20rem;
+    height: 13rem;
+  }
+  body main #supervisor {
+    grid-area: a;
+  }
+  body main #team-builder {
+    grid-area: b;
+  }
+  body main #karma {
+    grid-area: c;
+  }
+  body main #calculator {
+    grid-area: d;
+  }
+}/*# sourceMappingURL=style.css.map */
