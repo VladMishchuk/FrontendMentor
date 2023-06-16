@@ -1,0 +1,19 @@
+@import "variables";
+/*************/
+/***UTILITY***/
+/*************/
+
+* {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 400;
+  p {
+    color: $dark-grayish-blue;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    padding-inline: 1.5rem;
+  }
+}
+body {
+  display: grid;
+  gap: 5rem;
+}

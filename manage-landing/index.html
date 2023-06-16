@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Manage landing page</title>
+  </head>
+  <body>
+    <header>
+      <section id="header-top">
+        <div>
+          <img id="logo" src="images/logo.svg" alt="Manage" />
+        </div>
+        <div>
+          <img id="hamburger" src="images/icon-hamburger.svg" alt="Menu" />
+        </div>
+        <nav hidden>
+          <ul>
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+        </nav>
+
+        <button hidden>Get Started</button>
+      </section>
+
+      <section id="header-bottom">
+        <div id="header-image">
+          <img src="images/illustration-intro.svg" alt="" />
+        </div>
+        <div id="header-content">
+          <h1>Bring everyone together to build better products.</h1>
+          <p>
+            Manage makes it simple for software teams to plan day-to-day tasks
+            while keeping the larger team goals in view.
+          </p>
+          <button>Get Started</button>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="main-about">
+        <div>
+          <h2>What’s different about Manage?</h2>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
+
+        <div>
+          <ol>
+            <li>
+              <h3><span>01</span> Track company-wide progress</h3>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </li>
+            <li>
+              <h3><span>02</span> Advanced built-in reports</h3>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </li>
+            <li>
+              <h3><span>03</span> Everything you need in one place</h3>
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="main-slider">
+        <h2>What they’ve said</h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide" hidden>
+              <img src="images/avatar-anisha.png" alt="Anisha Li" />
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </article>
+            <article class="swiper-slide">
+              <img src="images/avatar-ali.png" alt="Ali Bravo" />
+              <h3>Ali Bravo</h3>
+              <p>
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </article>
+            <article class="swiper-slide" hidden>
+              <img src="images/avatar-richard.png" alt="Richard Watts" />
+              <h3>Richard Watts</h3>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </article>
+            <article class="swiper-slide" hidden>
+              <img src="images/avatar-shanai.png" alt="Shanai Gough" />
+              <h3>Shanai Gough</h3>
+              <p>
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </article>
+          </div>
+          <nav class="swiper-pagination">
+            <ol>
+              <li><input type="radio" name="slide" id=""></li>
+              <li><input type="radio" name="slide" id=""></li>
+              <li><input type="radio" name="slide" id=""></li>
+              <li><input type="radio" name="slide" id=""></li>
+            </ol>
+          </nav>
+        </div>
+        <button>Get Started</button>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <div>
+          <h2>Simplify how your team works today.</h2>
+          <button>Get Started</button>
+        </div>
+        <div>
+          Home Pricing Products About Us Careers Community Privacy Policy
+          Updates in your inbox… Go Copyright 2020. All Rights Reserved
+        </div>
+      </section>
+    </footer>
+    <!--     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+          });
+        </script> -->
+  </body>
+</html>
