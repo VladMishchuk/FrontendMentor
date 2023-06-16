@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 217, 205);
+  text-align: center;
+}
+body div {
+  position: relative;
+  max-width: 295px;
+  padding: 1.5rem;
+  background-color: rgb(206, 197, 182);
+  border-radius: 0.8rem;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+}
+body div h2 {
+  color: rgb(172, 0, 84);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+body div h1 {
+  word-wrap: break-word;
+  font-size: 28px;
+  color: rgb(49, 29, 22);
+}
+body div > img {
+  margin-bottom: 2rem;
+  content: url(../images/pattern-divider-mobile.svg);
+}
+body div button {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translate(-50%);
+  border: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1;
+  padding: 1.2rem;
+  background-color: rgb(172, 0, 84);
+  cursor: pointer;
+  transition: box-shadow 1s;
+}
+body div button:hover {
+  box-shadow: 0px 0px 50px rgb(172, 0, 84);
+}
+
+@media (min-width: 768px) {
+  body div {
+    padding: 2.7rem;
+    max-width: 444px;
+  }
+  body div h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+  }
+  body div h1 {
+    line-height: 1.5;
+  }
+  body div > img {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    content: url(../images/pattern-divider-desktop.svg);
+  }
+}/*# sourceMappingURL=style.css.map */
