@@ -197,6 +197,7 @@ body {
   color: hsl(228, 39%, 23%);
 }
 .header .header__bottom-section .bottom-section__content .bottom-section__paragraph {
+  color: hsl(227, 12%, 61%);
   font-size: 1rem;
   padding-inline: 1.5rem;
   line-height: 1.8;
@@ -310,6 +311,7 @@ body {
   color: hsl(228, 39%, 23%);
 }
 .main .main__top-section .top-section__main .top-section__paragraph {
+  color: hsl(227, 12%, 61%);
   line-height: 1.9;
   font-size: 0.9rem;
   padding-inline: 2.5rem;
@@ -435,7 +437,7 @@ body {
     font-size: 1rem;
     max-width: 24rem;
     line-height: 1.7;
-    padding-inline: 1.2rem;
+    padding-inline: 1.8rem;
   }
   .main .main__top-section .top-section__details .details__list {
     display: grid;
