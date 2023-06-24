@@ -2,8 +2,6 @@
 /***RESET***/
 /***********/
 
-/* https://piccalil.li/blog/a-modern-css-reset/ */
-
 /* Box sizing */
 *,
 *::before,
@@ -41,6 +39,21 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+/* links reset */
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:visited {
+    color: inherit;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 
 /* remove animations for people who've turned them off */
