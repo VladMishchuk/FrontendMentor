@@ -10,7 +10,6 @@ This is a solution to the [News homepage challenge on Frontend Mentor](https://w
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
 
@@ -30,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution]()
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://fm-news-pg.netlify.app/)
 
 ## My process
 
@@ -42,11 +41,6 @@ Users should be able to:
 - [VS Code](https://code.visualstudio.com/) - VS Code
 - [LiveSassCOmpiler](https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass) - Sass extension
 
-### What I learned
-
-```js
-
-```
 
 ### Continued development
 
