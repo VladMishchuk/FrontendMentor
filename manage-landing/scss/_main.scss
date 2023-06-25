@@ -109,6 +109,7 @@
             margin-bottom: 1.5rem;
           }
           .slide__quote {
+            color: $dark-grayish-blue;
             line-height: 1.9;
             font-size: 0.85rem;
             padding-inline: 1.7rem;
@@ -233,7 +234,9 @@
               margin-bottom: 1.5rem;
             }
             .slide__quote {
-              font-size: 0.85rem;
+              padding-inline: 2.2rem;
+              line-height: 1.5;
+              font-size: 1rem;
             }
           }
         }

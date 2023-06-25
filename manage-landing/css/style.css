@@ -394,6 +394,7 @@ body {
   margin-bottom: 1.5rem;
 }
 .main .main__bottom-section .swiper .swiper-wrapper .swiper-slide .slide__quote {
+  color: hsl(227, 12%, 61%);
   line-height: 1.9;
   font-size: 0.85rem;
   padding-inline: 1.7rem;
@@ -512,7 +513,9 @@ body {
     margin-bottom: 1.5rem;
   }
   .main .main__bottom-section .swiper .swiper-wrapper .swiper-slide .slide__quote {
-    font-size: 0.85rem;
+    padding-inline: 2.2rem;
+    line-height: 1.5;
+    font-size: 1rem;
   }
   .main .main__bottom-section .swiper .swiper-pagination {
     display: none;
