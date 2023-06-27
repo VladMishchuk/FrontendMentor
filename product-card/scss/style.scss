@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+$ff-serif: "Fraunces", serif;
+$ff-sans-serif: "Montserrat", sans-serif;
+
+$Dark-cyan: hsl(158, 36%, 37%);
+$Very-Dark-cyan: hsl(158, 42%, 18%);
+$Cream: hsl(30, 38%, 92%);
+$Very-dark-blue: hsl(212, 21%, 14%);
+$Dark-grayish-blue: hsl(228, 12%, 48%);
+$White: hsl(0, 0%, 100%);
+
+* {
+  font-family: $ff-sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $Cream;
+  .product {
+    margin: 1.15rem;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    background-color: $White;
+    max-width: 35rem;
+    &__image {
+      img {
+        display: block;
+        width: 100%;
+        filter: brightness(90%);
+      }
+    }
+    &__info {
+      padding: 1.85rem 1.7rem;
+      .info__type {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+        color: $Dark-grayish-blue;
+      }
+      .info__name {
+        font-family: $ff-serif;
+        font-size: 2.25rem;
+        margin-bottom: 1.2rem;
+        color: $Very-dark-blue;
+      }
+      .info__description {
+        line-height: 1.65;
+        font-size: 1.01rem;
+        margin-bottom: 1.6rem;
+        color: $Dark-grayish-blue;
+      }
+      .info__price {
+        display: flex;
+        gap: 1.25rem;
+        align-items: center;
+        margin-bottom: 1.4rem;
+        .price__actual {
+          font-family: $ff-serif;
+          font-size: 2.3rem;
+          color: $Dark-cyan;
+        }
+        .price__discount {
+          text-decoration: line-through;
+          color: $Dark-grayish-blue;
+        }
+      }
+      .add-to-cart {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 1.1rem;
+        border: none;
+        border-radius: 0.5rem;
+        background-color: $Dark-cyan;
+        font-weight: 700;
+        color: $White;
+        cursor: pointer;
+        &:hover {
+          background-color: $Very-Dark-cyan;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 43rem;
+      &__info {
+        padding: 2.5rem 2.2rem;
+        .info__type {
+          margin-bottom: 1.6rem;
+        }
+        .info__name {
+          margin-bottom: 1.8rem;
+        }
+        .info__description {
+          margin-bottom: 2rem;
+        }
+        .info__price {
+          margin-bottom: 2rem;
+        }
+        .add-to-cart {
+          margin: 0 auto;
+          width: 98%;
+        }
+      }
+    }
+  }
+}
